@@ -6,6 +6,7 @@ body {
   --colorPrincipalFondo2: #635E5E;
   --colorSeminegro: #121212;
   --colorLetraWhite: #bbb9b7;
+  --anchoMobile: 788px;
 }
 
 header { 
@@ -362,8 +363,7 @@ nav a:hover,
   border-radius: 35px;
   padding: 0px 2px;
 }
-.contenedorProyectos .carousel-inner .carousel-item .col-md-6:not(:last-child) {
-}
+
 .carousel-control-next-icon,.carousel-control-prev-icon{
   margin-bottom: 130px;
 }
@@ -441,7 +441,7 @@ nav a:hover,
 }
 
 /* 768x1024 */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 788px) {
   .body{
     font-size: 12px;
   }
@@ -529,7 +529,7 @@ nav a:hover,
   }
   /* PROYECTOS */
   .infoPrincipal{
-    width: 768px;
+    width: var(--anchoMobile);
     height: 8.125rem;
     display: flex;
     flex-direction: column;
@@ -541,7 +541,7 @@ nav a:hover,
     
   }
   .contenedorProyectos{
-    width:768px;
+    width:var(--anchoMobile);
   }
   /* qualifications */
   .experiencia{
@@ -552,7 +552,7 @@ nav a:hover,
     align-items: center;
   }
   .contenedorRectanguloPadre{
-    width: 768px;
+    width: var(--anchoMobile);
   }
   .contenedorHijoLeft, .contenedorHijoRight{
     width: 50%;
