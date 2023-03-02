@@ -441,7 +441,7 @@ nav a:hover,
 }
 
 /* 768x1024 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .body{
     font-size: 12px;
   }
